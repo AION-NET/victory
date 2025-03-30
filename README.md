@@ -1,4 +1,3 @@
-# AION victory
 #   AION Project Roadmap
 
 This document outlines the roadmap for the AION project, detailing the steps and priorities for its development and evolution.
