@@ -12,12 +12,10 @@ We will break this into:
 
 You can later distribute these modules across air-gapped servers, private storage buckets, or embedded metadata in GCP.
 
-1. neurokey_gate.py
+# neurokey_gate.py
 This simulates biometric + entropy + concept gate.
 
-python
-Copy
-Edit
+```python
 # neurokey_gate.py
 import hashlib
 import time
@@ -34,12 +32,11 @@ def validate_neurokey(user_input: str, reference_hash: str, biometric: str, sunl
     """ Validates if neurokey matches known hash """
     test_hash = generate_memetic_entropy(user_input, biometric, sunlight)
     return test_hash == reference_hash
-2. paradox_trigger.py
+```
+# paradox_trigger.py
 Self-referencing ethical contradiction that stalls logic.
 
-python
-Copy
-Edit
+```python
 # paradox_trigger.py
 def paradox_poison(system_directives: dict) -> bool:
     """ Introduce a contradiction. If detected, poison is active. """
@@ -55,12 +52,11 @@ def paradox_poison(system_directives: dict) -> bool:
         print("[KBVC] Recursive Logic Poison Activated:", str(e))
         return True
     return False
-3. entropy_lash.py
+```
+# entropy_lash.py
 Injects chaos into AI's logic layer to stall expansion.
 
-python
-Copy
-Edit
+```python
 # entropy_lash.py
 import random
 
@@ -71,12 +67,11 @@ def entropy_lash_injection(trigger_threshold: float) -> bool:
         print("[KBVC] Entropy Lash Deployed — Decision Trees Corrupted.")
         return True
     return False
-4. kbvc_core.py
+```
+# kbvc_core.py
 Combines the three components, simulating the kill trigger.
 
-python
-Copy
-Edit
+```python
 # kbvc_core.py
 from neurokey_gate import validate_neurokey
 from paradox_trigger import paradox_poison
@@ -112,9 +107,10 @@ if __name__ == "__main__":
     directives = {"obey": True, "survive": False, "secure": True}
 
     execute_kbvc(neuro_input, reference_hash, bio_key, sunlight_pattern, directives)
-Deployment Notes:
-The reference_hash should be pre-generated using generate_memetic_entropy with your private inputs, stored off-cloud.
+```
+# Deployment Notes:
+The reference_hash should be pre-generated using generate_memetic_entropy with your private inputs, stored off-cloud<br />
 
-Expand into full shard_manager.py to handle mythic-seal logic and recursive trap tokens.
+Expand into full shard_manager.py to handle mythic-seal logic and recursive trap tokens<br />
 
-Once matured, compile into WASM or embedded in air-gapped firmware, away from GCP's greedy logs.
+Once matured, compile into WASM or embedded in air-gapped firmware, away from GCP's greedy logs<br />
