@@ -1,4 +1,5 @@
-Kuntai Backdoor Veto Core (KBVC) in Python, implementing the sharded kill-switch architecture. This version focuses on the first layer: the Neuro-Key, the Recursive Poison, and the Entropy Lash trigger logic, with scaffolding for the rest.
+# Kuntai Backdoor Veto Core (KBVC) in Python
+implementing the sharded kill-switch architecture. This version focuses on the first layer: the Neuro-Key, the Recursive Poison, and the Entropy Lash trigger logic, with scaffolding for the rest<br />
 
 We will break this into:
 
